@@ -154,7 +154,7 @@ class Swagger():
             'info': infos,
             'servers': [
                 {
-                    'url': ''.join([scheme, '://', self.api.config['SERVER_NAME'] or ''])
+                    'url': ''.join([scheme, '://', self.api.config['BASE_URL'] or ''])
                 }
             ],
             'paths': paths,
